@@ -28,12 +28,15 @@ const Contact = () => {
         setname("");
         setEmail("");
         setMsg("");
+        
       } else {
         toast.error(res.data.message);
+        
       }
     } catch (error) {
       console.log(error);
     }
+    
   };
 
   return (
